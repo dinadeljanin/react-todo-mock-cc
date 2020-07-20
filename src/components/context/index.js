@@ -6,7 +6,8 @@ export const Consumer = ToDoContext.Consumer
 
 export class Provider extends Component {
   state = {
-    todos: []
+    todos: [],
+    searchWord: ""
   }
 
 
@@ -28,9 +29,9 @@ export class Provider extends Component {
   }
 
   handleAddTask = (task) => {
-    const taskId = (this.state.todos.length + 1).toString()
+    const taskId = parseInt(this.state.todos[this.state.todos.length - 1].id)
     const obj = {
-      "id": taskId,
+      "id": (taskId + 1).toString(),
       "title": task,
       "completed": false
     }
@@ -76,14 +77,20 @@ export class Provider extends Component {
     }).then(this.fetchHelper)
   }
 
+  handleSearch = (val) => {
+    this.setState({searchWord: val})
+  }
+
   render() {
     return (
       <ToDoContext.Provider value={{
         todos: this.state.todos,
+        searchWord: this.state.searchWord,
         actions: {
           changeTask: this.handleChange,
           deleteTask: this.handleDelete,
-          addTask: this.handleAddTask
+          addTask: this.handleAddTask,
+          searchTask: this.handleSearch
         }
       }}>
         {this.props.children}

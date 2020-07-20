@@ -1,78 +1,73 @@
 {
   "todos": [
     {
-      "id": "1",
-      "title": "Code",
-      "completed": false
-    },
-    {
       "id": "4",
       "title": "hello",
       "completed": true
     },
     {
-      "id": "3",
-      "title": "work pls",
+      "id": "2",
+      "title": "Fetch the data",
+      "completed": true
+    },
+    {
+      "id": "20",
+      "title": "Toggle button text based on completed boolean",
+      "completed": true
+    },
+    {
+      "id": "21",
+      "title": "Add a new to do task",
+      "completed": true
+    },
+    {
+      "id": "22",
+      "title": "Delete a todo",
+      "completed": true
+    },
+    {
+      "id": "23",
+      "title": "Incorporate the search bar component",
+      "completed": true
+    },
+    {
+      "id": "24",
+      "title": "Figure out why this form won't clear",
+      "completed": true
+    },
+    {
+      "id": "25",
+      "title": "Make some commits for today",
       "completed": false
     },
     {
+      "id": "26",
+      "title": "Try resetting now",
+      "completed": false
+    },
+    {
+      "id": "27",
+      "title": "And now?",
+      "completed": false
+    },
+    {
+      "id": "28",
+      "title": "And what about now?",
+      "completed": false
+    },
+    {
+      "id": "29",
+      "title": "And.... it works!",
+      "completed": false
+    },
+    {
+      "id": "30",
       "title": "hello",
-      "completed": false,
-      "id": "2"
-    },
-    {
-      "id": "5",
-      "title": "hello",
-      "completed": true
-    },
-    {
-      "id": "6",
-      "title": "send help",
-      "completed": true
-    },
-    {
-      "id": "7",
-      "title": "send help",
       "completed": false
     },
     {
-      "title": "work pls",
-      "completed": true,
-      "id": "8"
-    },
-    {
-      "title": "hello'",
-      "completed": false,
-      "id": "9"
-    },
-    {
-      "id": "10",
-      "title": "dude",
-      "completed": true
-    },
-    {
-      "id": "11",
-      "title": "woooork",
-      "completed": false
-    },
-    {
-      "id": "12",
-      "title": "yes",
-      "completed": false
-    },
-    {
-      "id": "13",
-      "title": "finally",
-      "completed": true
-    },
-    {
-      "id": "14",
-      "title": "omg",
-      "completed": true
-    },
-    {
-      "id": "15",
-      "title": "Get the update functionality working",
+      "id": "31",
+      "title": "Figure out why createRef doesn't capture the last space or key inputted and why adding a space resets the filter",
       "completed": false
     }
   ]

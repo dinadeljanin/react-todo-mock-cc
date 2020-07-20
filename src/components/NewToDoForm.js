@@ -12,16 +12,18 @@ export default class NewToDoForm extends Component {
            const handleSubmit = (e) => {
             e.preventDefault()
             actions.addTask(this.taskInput.current.value)
+            console.log(e.currentTarget)
+            e.currentTarget.reset()
           }
           return (
             <div>
-              <form className="ui form">
+              <form className="ui form" onSubmit={handleSubmit}>
                   <h1>New ToDo</h1>
                   <div className="field">
                       <label>Title</label>
                       <input type="text" name="title" placeholder="Title" ref={this.taskInput}/>
                   </div>
-                  <button className="ui button" onClick={handleSubmit} type="submit">Submit</button>
+                  <button className="ui button" type="submit">Submit</button>
               </form>
             </div>
           )

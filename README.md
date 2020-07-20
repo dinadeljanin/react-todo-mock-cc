@@ -66,7 +66,7 @@ Here is a gif of what it's supposed to look:
 
 ![Add Delete Todo](https://media.giphy.com/media/hWGBJ0atz0D0GZUEjc/giphy.gif)
 
-- [ ] Incorporate the SearchBarComponent within the Incomplete Component to filter out todos. As you type, the Incomplete todos are dynamically rendered.
+- [x] Incorporate the SearchBarComponent within the Incomplete Component to filter out todos. As you type, the Incomplete todos are dynamically rendered.
 
 Here is a gif of what it's supposed to look:
 
