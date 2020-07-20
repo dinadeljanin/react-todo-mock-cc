@@ -5,11 +5,6 @@ import ToDoContainer from './components/ToDoContainer'
 
 
 class App extends React.Component{
-
-  state = {
-    todos: []
-  }
-
   render(){
     return (
       <div className="App">

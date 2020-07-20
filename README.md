@@ -28,10 +28,10 @@ Ultimately, we want our App to look something like:
 
 **It might help to first draw out the component hierarchy**
 
-* Fetch the data from http://localhost:3000/todos
-* Render the each todo in the appropriate component
-* Each todo card will have button to change the complete status which will conditionally render based on the location of component.  (Also, if a todo is under the Complete, the button text should say Incomplete and vice-versa.)
-* When the button is clicked, the todo should be rendered in the appropriate component. BONUS: a PATCH request should be sent to http://localhost:3000/todos/:id to change the status of `completed` for the associated todo.
+- [x] Fetch the data from http://localhost:3000/todos
+- [x] Render the each todo in the appropriate component
+- [x] Each todo card will have button to change the complete status which will conditionally render based on the location of component.  (Also, if a todo is under the Complete, the button text should say Incomplete and vice-versa.)
+- [x] When the button is clicked, the todo should be rendered in the appropriate component. BONUS: a PATCH request should be sent to http://localhost:3000/todos/:id to change the status of `completed` for the associated todo.
 Don't forget:
 ```
     method: "PATCH",
@@ -46,8 +46,8 @@ Here is a gif of what it's supposed to look (Ignore the skull. That's a theme of
 
 ![Change Complete Gif](https://media.giphy.com/media/hWGBJ0atz0D0GZUEjc/giphy.gif)
 
-* Add a new todo to the collection and have it rendered. BONUS: Make a POST request to http://localhost:3000/todos. 
-Don't forget: 
+- [x] Add a new todo to the collection and have it rendered. BONUS: Make a POST request to http://localhost:3000/todos.
+Don't forget:
 ```
     method: "POST",
     headers: {
@@ -56,7 +56,7 @@ Don't forget:
     },
     body: JSON.stringify({})
 ```
-* Delete a todo from the collection. BONUS: Make a DELETE request to http://localhost:3000/todos/:id
+- [x] Delete a todo from the collection. BONUS: Make a DELETE request to http://localhost:3000/todos/:id
 Don't forget:
 ```
     method: "DELETE"
@@ -66,7 +66,7 @@ Here is a gif of what it's supposed to look:
 
 ![Add Delete Todo](https://media.giphy.com/media/hWGBJ0atz0D0GZUEjc/giphy.gif)
 
-* Incorporate the SearchBarComponent within the Incomplete Component to filter out todos. As you type, the Incomplete todos are dynamically rendered. 
+- [ ] Incorporate the SearchBarComponent within the Incomplete Component to filter out todos. As you type, the Incomplete todos are dynamically rendered.
 
 Here is a gif of what it's supposed to look:
 

@@ -1,19 +1,28 @@
 import React from 'react'
+import {Consumer} from './context'
 
-const ToDoCard = (props) => {
+const ToDoCard = ({tasks, index}) => {
     return (
-    <div className="ui card">
-        <div className="content">
-          <div className="header">{/*ToDo TITLE*/}</div>
-          {/* The button will require some conditional rendering. 
-            If the button is under the Incomplete Container, button should be blue and text should say Complete
-            If the button is under Complete Container, button should be orange and text should say Incomplete 
-            */}
-          <button onClick={null} className="ui button blue">Change</button>
-          <button onClick={null} className="ui button red">Delete</button>
-        </div>
-        
-    </div>
+    <Consumer>
+      {({actions}) =>
+          <div className="ui card">
+              <div className="content">
+                <div className="header">{tasks[index].title}</div>
+                <button
+                  onClick={() => actions.changeTask(tasks[index].id, tasks[index].completed)}
+                  className={tasks[index].completed ? "ui button orange" : "ui button blue"}>
+                  {tasks[index].completed ? "Incomplete" : "Change"}
+                </button>
+                <button
+                  onClick={() => actions.deleteTask(tasks[index].id)}
+                  className="ui button red">Delete</button>
+              </div>
+
+          </div>
+      }
+
+    </Consumer>
+
     )
 }
 
